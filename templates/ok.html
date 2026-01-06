@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Thanks, all of you are a cute person ;)</h1>
+    <img src="/static/ok-cat.png" alt="ok from a cat">
+    {% for form in forms %}
+        <h2>{{ form[0] }} : {{ form[1] }} : {{ form[2] }}</h2> 
+    {% endfor %}
+{% endblock %}
